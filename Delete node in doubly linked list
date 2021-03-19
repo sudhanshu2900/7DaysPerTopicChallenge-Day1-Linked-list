@@ -11,10 +11,9 @@ Node* deleteNode(Node *head_ref, int x)
     {
       
         Node *temp=head_ref;
-        int cnt=0;
+        
         while(x>1){
             temp=temp->next;
-            cnt++;
             x--;
         }
         if(temp->prev!=NULL){
