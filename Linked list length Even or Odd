@@ -1,0 +1,23 @@
+PROBLEM:
+        arr[] = 9 4 3
+        arr[] = 12 52 10 47 95 0
+  
+Output:
+        Odd
+        Even
+       
+Here function return 0 for even 
+
+SOLUTION:
+
+int isLengthEvenOrOdd(struct Node* head)
+{
+     
+     Node *temp=head;
+     int cnt=0;
+     while(temp!=NULL){
+         cnt++;
+         temp=temp->next;
+     }
+     return cnt%2;
+}
